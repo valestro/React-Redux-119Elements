@@ -1,0 +1,29 @@
+// GLOBAL MIXINS
+
+=circle($size: 100px, $color: teal, $display: inline-block)
+    display: $display
+    font-size: 24px
+    width: $size
+    height: $size
+    background: $color
+    color: white
+    -webkit-border-radius: $size/2
+    -moz-border-radius: $size/2
+    border-radius: $size/2
+    outline: none
+
+=keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @-ms-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+
+=widthLimits($min: $defaultMinW, $max: $defaultMaxW)
+    margin-left: auto
+    margin-right: auto
+    min-width: $min
+    max-width: $max

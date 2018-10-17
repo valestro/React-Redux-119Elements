@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>React-Redux-Elements</title>
+    <link rel="stylesheet" href="static/css/bundle.min.css">
+</head>
+<body>
+    <div id="vidMenu">
+        <button class="videoMenuButton pauseVidButton" id="pauseVid" type="button">&#9646;&#9646;</button>
+        <button class="videoMenuButton playVidButton" id="playVid" type="button">&#9654;</button>
+        <br>
+    </div>
+    <video autoPlay id="backVideo">
+        <source src="/static/elementsVideo.mp4" type="video/mp4"/>
+        No HTML5 video Support. Upgrade browser.
+    </video>
+
+    <div id="root"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded",function(){
+
+            var pauseButton =  document.getElementById('pauseVid');
+            var playButton = document.getElementById('playVid');
+            var vid = document.getElementById('backVideo');
+
+            pauseButton.addEventListener('click', pauseVid);
+            playButton.addEventListener('click', playVid);
+            vid.addEventListener('ended', vidEnded, false);
+
+            function pauseVid() {
+                playButton.classList.toggle('showBut');
+                pauseButton.classList.toggle('hideBut');
+                vid.pause();
+            }
+
+            function playVid() {
+                pauseButton.classList.toggle('hideBut');
+                playButton.classList.toggle('showBut');
+                vid.play();
+            }
+
+            function vidEnded(e){
+                pauseButton.classList.toggle('hideBut');
+                playButton.classList.toggle('showBut');
+            }
+
+        });
+
+    </script>
+    <script src="/static/js/bundle.min.js"></script>
+</body>
+</html>

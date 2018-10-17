@@ -1,0 +1,78 @@
+*
+    font-family: $font
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+
+a
+    text-decoration: none
+    color: teal
+
+body
+    background: $secColor
+    color: $textPrimeColor
+    margin: 0
+    padding: 0px
+    background-image: url(../../../static/circuitWireWhiteBackground.jpg)
+
+h1
+    color: $h1Color
+    padding: 5px
+
+h2
+    color: $h2Color
+    line-height: .8
+
+header
+    position: relative
+    z-index: 9999
+    height: 80px
+    background-color: $lightNavColor
+    +widthLimits()
+
+iframe
+    padding-top: 10px
+
+
+img
+    max-width: 700px
+    width: 100%
+
+label
+    display: inline-block
+    margin-top: 15px
+    margin-bottom: 5px
+    color: $textPrimeColor
+    font-size: 13px
+    cursor: pointer
+
+
+li
+    line-height: 1.4em
+    font-weight: 700
+    font-size: 14px
+    color: $textPrimeColor
+    cursor: pointer
+
+
+nav
+    position: relative
+    z-index: 9999
+    background-color: $darkNavColor
+    height: 40px
+    +widthLimits()
+
+p
+    margin: 0 10px
+    line-height: 1.5em
+    padding: 0px
+
+p:nth-child(odd)
+    color: #74d674
+
+th
+    color: #74d674
+
