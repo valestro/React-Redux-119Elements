@@ -3,7 +3,7 @@ PROJECT: JavaScript React-Redux website that displays information about all 119 
 
 FRONT END TOOLS USED: JavaScript, React-Redux, CSS-3 (Sass), HTML-5, npm, Webpack.
 
-RUN DEV SERVER WEBPACK:
+RUN DEV SERVER:
 npm start 
 
 Go to localhost:3000
