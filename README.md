@@ -1,4 +1,6 @@
 # React-Redux-119Elements
+[Live site](https://elementals.pythonanywhere.com/)
+
 PROJECT: JavaScript React-Redux website that displays information about all 119 Chemical elements. Store currently contains a list of 119 elements and foos list to be replaced with your JSON data.
 
 FRONT END TOOLS USED: JavaScript, React-Redux, CSS-3 (Sass), HTML-5, npm, Webpack.
@@ -12,4 +14,4 @@ DISTRIBUTION:
 Can build bundle.min.js by running the command
 npm run build:prod
 
-[Live site](https://hondaaccord.pythonanywhere.com/elements)
+
